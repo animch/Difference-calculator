@@ -1,10 +1,12 @@
 import _ from 'lodash';
 import { readFileSync } from 'fs';
+import { resolve } from 'node:path';
+import { cwd } from 'node:process';
 
 export default ((filepath1, filepath2) => {
-  const dataRead = (path) => readFileSync(path, 'utf-8');
-  const file1 = dataRead(filepath1);
-  const file2 = dataRead(filepath2);
+  const dataRead = (filePath) => readFileSync(filePath, 'utf-8');
+  const file1 = dataRead(resolve(cwd(), filepath1));
+  const file2 = dataRead(resolve(cwd(), filepath2));
   const parsedFile1 = JSON.parse(file1);
   const parsedFile2 = JSON.parse(file2);
   const keys = _.sortBy(_.union(_.keys(parsedFile1), _.keys(parsedFile2)));
