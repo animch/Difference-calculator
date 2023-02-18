@@ -26,14 +26,14 @@
 </ol>
 
 <h2>Демонстарция проекта</h2>
+<h3>Stylish</h3>
 <hr>
-<h3>Stylish<</h3>
 <a href="https://asciinema.org/a/OBTsicxywbX3CQKPejS7r8EYA" target="_blank"><img src="https://asciinema.org/a/OBTsicxywbX3CQKPejS7r8EYA.svg" /></a>
 
-<hr>
 <h3>Plain</h3>
+<hr>
 <a href="https://asciinema.org/a/KgIegbDz4vc1J38goF6hx36Op" target="_blank"><img src="https://asciinema.org/a/KgIegbDz4vc1J38goF6hx36Op.svg" /></a>
 
-<hr>
 <h3>JSON</h3>
+<hr>
 <a href="https://asciinema.org/a/lRhbNHhXv1b228jnSjoGJX5bz" target="_blank"><img src="https://asciinema.org/a/lRhbNHhXv1b228jnSjoGJX5bz.svg" /></a>
