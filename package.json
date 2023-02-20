@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Difference calculator is a program that perceives the difference between two data structures",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
