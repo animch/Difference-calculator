@@ -7,9 +7,6 @@
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
-  "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/animch/frontend-project-46.git"
