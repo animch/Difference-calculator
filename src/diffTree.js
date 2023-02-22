@@ -6,7 +6,7 @@ const buildDiffTree = (data1, data2) => {
   const sortKeys = _.sortBy(_.union(keys1, keys2));
 
   const result = sortKeys.map((key) => {
-    if (_.isObject(data1[key]) && _.isObject(data2[key])) {
+    if (_.isPlainObject(data1[key]) && _.isPlainObject(data2[key])) {
       return { type: 'nested', key, children: buildDiffTree(data1[key], data2[key]) };
     }
     if (!_.has(data1, key)) {
