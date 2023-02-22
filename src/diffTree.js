@@ -15,7 +15,7 @@ const buildDiffTree = (data1, data2) => {
     if (!_.has(data2, key)) {
       return { type: 'removed', key, value: data1[key] };
     }
-    if (data2[key] !== data1[key]) {
+    if (!_.isEqual(data1[key], data2[key])) {
       return {
         type: 'updated', key, value1: data1[key], value2: data2[key],
       };
