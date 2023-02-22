@@ -14,10 +14,7 @@ export default (nodes) => {
     const allKeys = parent ? `${parent}.${keys}` : `${keys}`;
     switch (types) {
       case 'nested': {
-        const childrens = node.children
-          .map((child) => (iter(child, allKeys)))
-          .filter((child) => (child !== ''));
-        return `${childrens.join('\n')}`;
+        return node.children.flatMap((child) => iter(child, `${allKeys}`)).join('\n');
       }
       case 'added': {
         return `Property '${allKeys}' was added with value: ${makeString(node.value)}`;
@@ -29,7 +26,7 @@ export default (nodes) => {
         return `Property '${allKeys}' was updated. From ${makeString(node.value1)} to ${makeString(node.value2)}`;
       }
       case 'unchanged': {
-        return '';
+        return [];
       }
       default: {
         throw new Error(`Unknown type - ${types}`);
