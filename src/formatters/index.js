@@ -8,7 +8,7 @@ export default (tree, format) => {
     case 'plain':
       return makePlain(tree);
     case 'json':
-      return JSON.stringify(tree);
+      return JSON.stringify(tree, ' ');
     default:
       throw new Error(`Unknown format - ${format}`);
   }
