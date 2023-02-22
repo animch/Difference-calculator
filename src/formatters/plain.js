@@ -9,10 +9,9 @@ const makeString = (value) => {
 
 export default (nodes) => {
   const iter = (node, parent = '') => {
-    const types = node.type;
-    const keys = node.key;
-    const allKeys = parent ? `${parent}.${keys}` : `${keys}`;
-    switch (types) {
+    const { type, key } = node;
+    const allKeys = parent ? `${parent}.${key}` : `${key}`;
+    switch (type) {
       case 'nested': {
         return node.children.flatMap((child) => iter(child, `${allKeys}`)).join('\n');
       }
@@ -29,7 +28,7 @@ export default (nodes) => {
         return [];
       }
       default: {
-        throw new Error(`Unknown type - ${types}`);
+        throw new Error(`Unknown type - ${type}`);
       }
     }
   };
