@@ -21,7 +21,7 @@
 
 <h3>Установка</h3>
 <ol>
-  <li>Склонируйте репозиторий: git clone https://github.com/animch/frontend-project-46.git</li>
+  <li>Склонируйте репозиторий: git clone hgit@github.com:animch/Difference-calculator.git</li>
   <li>Установите зависимости: make install</li>
 </ol>
 
