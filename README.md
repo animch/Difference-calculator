@@ -21,7 +21,7 @@
 
 <h3>Установка</h3>
 <ol>
-  <li>Склонируйте репозиторий: git clone hgit@github.com:animch/Difference-calculator.git</li>
+  <li>Склонируйте репозиторий: git clone git@github.com:animch/Difference-calculator.git</li>
   <li>Установите зависимости: make install</li>
 </ol>
 
